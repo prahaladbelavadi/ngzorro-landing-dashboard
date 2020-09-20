@@ -16,11 +16,11 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { WelcomeRoutingModule } from './welcome-routing.module';
 
 import { WelcomeComponent } from './welcome.component';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @NgModule({
   imports: [
@@ -36,7 +36,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
     NzButtonModule,
     NzGridModule,
     NzFormModule,
-    NzInputModule
+    NzInputModule,
+    NzSelectModule,
   ],
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent],
