@@ -14,6 +14,10 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { ReactiveFormsModule } from '@angular/forms';
 
 registerLocaleData(en);
 
@@ -29,6 +33,9 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzButtonModule,
+    NzGridModule,
+    NzFormModule,
+    ReactiveFormsModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

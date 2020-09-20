@@ -12,22 +12,31 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 
 import { WelcomeComponent } from './welcome.component';
+import { NzInputModule } from 'ng-zorro-antd/input';
 
 @NgModule({
   imports: [
     WelcomeRoutingModule,
     // BrowserModule,
     // IconsProviderModule,
+    ReactiveFormsModule,
     NzLayoutModule,
     NzMenuModule,
     FormsModule,
     HttpClientModule,
     // BrowserAnimationsModule,
     NzButtonModule,
+    NzGridModule,
+    NzFormModule,
+    NzInputModule
   ],
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent],

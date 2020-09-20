@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
+import { IconsProviderModule } from '../../icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
     FormsModule,
